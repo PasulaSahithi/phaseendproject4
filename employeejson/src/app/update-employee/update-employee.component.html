@@ -1,0 +1,23 @@
+<div class="card text-center" id="top"> 
+    <div class="card-header">
+      <h2><i>Update Employee</i></h2>
+    </div>
+    <div class="card-body" id="body">
+        <div class="row">
+           <div>
+           <label for="">FirstName</label><br>
+            <input type="text" name="firstname" [(ngModel)]="firstname">
+           </div>
+           <div>
+            <label for="">LastName</label><br>
+            <input type="text" name="laststname" [(ngModel)]="lastname">
+           </div>
+           <div>
+            <label for="" id="email">Email</label><br>
+            <input type="email" name="email" [(ngModel)]="email">
+           </div>
+          </div>
+        <button  (click)="updateEmployee(firstname,lastname,email)" class="btn btn-primary">Update</button>
+    </div>
+  </div>
+  <h4><i>{{message}}</i></h4>

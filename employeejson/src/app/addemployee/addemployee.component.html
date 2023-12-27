@@ -1,0 +1,19 @@
+<button routerLink="/add" class="btn btn-secondary" id="button">Add New Employee</button>
+<br><br>
+<table border="1" cellspacing="200px">
+    <tr>
+        <th>#</th>
+        <th><i>First Name</i></th>
+        <th><i>Last Name</i></th>
+        <th><i>Email</i></th>
+        <th><i>View</i></th>
+    </tr>
+    <tr *ngFor="let  employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.firstname}}</td>
+        <td>{{employee.lastname}}</td>
+        <td>{{employee.email}}</td>
+        <td><button routerLink="/employee-detail/{{employee.id}}" class="btn btn-secondary" id="but">View Details</button></td>
+    </tr>
+</table>
+

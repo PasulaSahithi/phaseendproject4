@@ -1,0 +1,55 @@
+<!-- <div class="card text-left" id="top">
+     <div class="card-header">
+        <ul>
+         <li>
+            The employee: {{employee.firstname}}
+        </li>
+        </ul>
+    </div>
+    <div class="card-footer">
+     <button class="btn btn-info" routerLink="/addemployee">Employee List</button>&nbsp;&nbsp;&nbsp;
+     <button class="btn btn-danger" >Delete</button>&nbsp;&nbsp;&nbsp;
+     <button class="btn btn-secondary">Update</button>
+    </div>
+  </div> -->
+
+      
+
+<!-- <h3>Details of {{employees.first_name}}</h3> -->
+
+
+<div class="card text-left" id="top">
+    <div id="head">
+    <h4 class="card-header" id="det">Details of {{employee.firstname}}</h4>
+</div>
+    <div class="container col-md-8 mt-5 mb-5 card-body">
+    <div class="horizontal-table " id="tab">
+        <table class="table " [hidden]="ishidden">
+            <tbody>
+                <tr>
+                    <th scope="row">Employee Id</th>
+                    <td>{{ employee.id }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Employee First Name</th>
+                    <td>{{ employee.firstname }}</td>    
+                </tr>
+                <tr>
+                    <th>Employee Last Name</th>
+                    <td>{{ employee.lastname }}</td> 
+                </tr>
+                <tr>
+                    <th>Employee Email</th>
+                    <td>{{ employee.email }}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+        <div class="buttons card-footer" >
+            <button class="emp" routerLink="/addemployee" class="btn btn-info">Employee List</button>&nbsp;&nbsp;
+            <button class="delete" (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;
+            <button class="update" routerLink="/updateEmployee/{{employee.id}}" class="btn btn-secondary">Update</button>
+        </div>
+       
+    </div>

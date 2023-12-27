@@ -1,0 +1,38 @@
+label{
+    margin-right: 110px;
+    color:rgba(0, 4, 255, 0.719);
+    font-family: cursive;
+    font-weight: bold;
+}
+div{
+    padding: 5px;
+}
+#email{
+    margin-right: 150px;
+}
+input{
+    width:12em;
+    
+}
+h2{
+    color:chocolate;
+}
+#top
+{
+margin-left:18em;
+margin-right: 18em;
+margin-top: 2em;
+font-family: Georgia, 'Times New Roman', Times, serif;
+/* background-color: rgba(196, 255, 237, 0.534); */
+}
+
+#body
+{
+    background-color: rgba(196, 255, 237, 0.534);
+}
+h4{
+    color:rgba(0, 128, 0, 0.477);
+    margin-left: 40%;
+    font-family: serif;
+    font-weight: bold;
+}
